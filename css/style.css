@@ -852,7 +852,7 @@ justify-content:flex-start;
 }
 
 /*parte responsive smartphone*/
-@media only screen and (max-width: 619px) {
+@media only screen and (max-width: 500px) {
     body{
         overflow-x: hidden;
     }
