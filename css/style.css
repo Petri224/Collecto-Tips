@@ -11,6 +11,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
  body{
     margin: 0;
 font-family:"Inter", "Fustat", sans-serif;
+overflow-x: hidden;
  }
 
 /*header*/
@@ -23,14 +24,14 @@ header{
 }
  .inizio {
     background-color: #fff5f6;
-    max-width: 1440px;
+    width: 100%;
     height: 150px;   
 }
 
 .logo img{
-    width: 170px;
-   position: absolute;
-   padding: 0 54px;
+    width: 171px;
+    height: auto;
+    position: absolute;
     }
 
 .inizio ul{
@@ -104,20 +105,21 @@ justify-content:flex-start;
 
     /*info box*/
     .red-box{
-        width: 1323px;
-        height: 708px;
-        background: #A5505B;
+         max-width: 100%;
+        height: 100%;
+        background-color: #A5505B;
         border-radius: 40px;
-        margin: auto;
+       margin: 22px;
       text-align: center;
+      padding: 20px;
        }
 
        .red-box-2{
-        width: 1323px;
-        height: 100%;
+        max-width: 100%;
+        height: 708px;
         background: #A5505B;
         border-radius: 40px;
-        margin: auto;
+        margin: 22px;
       text-align: center;
        }
 
@@ -126,15 +128,13 @@ justify-content:flex-start;
         height: 355px;
        display: flex;
         align-items: center;
-        padding: 50px;
+        padding: 55px;
         }
 
         .link-veloce a{
             text-decoration:none;
            }
-        .link-veloce{
-            margin: -30px;
-        }
+       
 
         .red-box a p:hover{
             color: #970d1f;
@@ -151,7 +151,8 @@ justify-content:flex-start;
             justify-content: center;
         }
         .foto-centro img{
-            width: 1100px;
+            width: 80%;
+            
             padding: 30px;
             border-radius: 60px;
         }
@@ -167,29 +168,17 @@ justify-content:flex-start;
         color: white;
         text-align: center;
         padding: 0 50px;
-        }
-
-        .red-box-2 h2{
-        font-size: 60px;
-        color: white;
-        text-align: center;
-        padding: 50px 0 0 0;
         
         }
 
-         .red-box-2 p{
-        font-size: 20px;
-        color: white;
-        text-align: center;
-        padding: 50px;
-        }
+ 
      
         /*descrizione generica*/
         .desc-generica h3{
             font-size: 60px;
         color: black;
         padding:39px;
-        width: 699px;
+        width: 80%;
        
         }
          .desc-generica p{
@@ -197,35 +186,8 @@ justify-content:flex-start;
         color: black;
         padding:0 40px;
         margin-top: -15px;
-        width: 699px;
-        
-        }
-
-        .grid-ima{
-            display: grid;
-            grid-template-columns: 20% 20% ;
-            grid-template-rows: 20% 20% 20% 20%;
-        }
-        
-        .ima-didascalia1{
-            grid-column: 1 / span 2;
-            padding: 40px;
-        }
-         .ima-didascalia1 img{
-            max-width:600px;
-            height: 487px;
-        }
-
-        .ima-didascalia2 img{
-            max-width:100%;
-            height: 487px;
-            
-            
-        }
-        .ima-didascalia2{
-          grid-column:6;
-          padding: 40px;  
-          
+        max-width: 88%;
+        margin-bottom: 20px;
         }
 
         .testo-a-sinistra{
@@ -238,9 +200,10 @@ justify-content:flex-start;
             justify-content: flex-end;
         }
         .immagine-destra img{
-            width: 484px;
-            border-radius: 120px;
-            padding: 94px;
+            
+            max-width:100%;
+            border-radius: 50px;
+            padding: 25px;
          }
 
          .immagine-centrale img{
@@ -260,7 +223,7 @@ justify-content:flex-start;
             justify-content: flex-start;
         }
         .immagine-sinistra img{
-            width: 484px;
+            max-width: 100%;
             border-radius: 120px;
             padding: 94px;
          }
@@ -270,7 +233,7 @@ justify-content:flex-start;
         color: black;
         padding:0 40px;
         margin-top: -30px;
-        width: 600px;
+        width: 100%;
         }
 
          span{
@@ -279,10 +242,10 @@ justify-content:flex-start;
 
         .immagine-destra-wide img{
             object-fit: cover;
-             width: 505px;
+             width: 100%;
              height: 694px;
-            border-radius: 120px;
-            padding: 94px;
+            border-radius: 50px;
+            padding: 20px;
         }
 
         .immagine-destra-wide{
@@ -301,7 +264,7 @@ justify-content:flex-start;
         color: black;
         padding:0 40px;
         margin-top: -15px;
-        width: 600px;
+        max-width: 80%;
         margin-bottom: 20px;
         }
 
@@ -314,10 +277,10 @@ justify-content:flex-start;
 
         .immagine-sinistra-wide img{
             object-fit: cover;
-             width: 505px;
+             width: 100%;
              height: 694px;
-            border-radius: 120px;
-            padding: 94px;
+            border-radius: 50px;
+            padding: 20px;
         }
 
         .immagine-sinistra-wide{
@@ -339,7 +302,18 @@ justify-content:flex-start;
         color: black;
         padding:0 40px;
         margin-top: -15px;
-        width: 600px;
+        width: 100%;
+        }
+
+        .card-3{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 22px;
+        }
+        .selezione-3 img{
+            width: 100%;
+            
         }
 
         
@@ -361,11 +335,25 @@ justify-content:flex-start;
         color: white;
         display: flex;
         align-items: flex-end;
-        background-color: rgba(0, 0, 0, 0.4);
-        width: 562px;
+        
+        width: 100%;
         height: 593px;
-        margin: 44px;
-        border-radius: 35px;
+        margin-top: 44px;
+        margin-left: 22px;
+        border-radius: 20px;
+       }
+
+        .dida-3{
+        position: absolute;
+        color: white;
+        display: flex;
+        align-items: flex-end;
+       width: 100%;
+        height: 593px;
+        margin-top: 44px;
+        margin-left: -22px;
+        border-radius: 20px;
+        pointer-events: none;
        }
 
      
@@ -382,15 +370,17 @@ justify-content:flex-start;
         font-weight: 400;
         padding: 0 24px;
         margin-bottom: 48px;
-        width: 542px;
+        width: 80%;
        }
 
        .selezione-1 img{
-        width: 562px;
+        width: 100%;
         height: 593px;
         object-fit: cover;
-        padding: 44px;
-        border-radius: 80px;
+        border-radius: 20px;
+        margin-top: 44px;
+        margin-left: 22px;
+        margin-bottom: 25px;
         
        }
 
@@ -400,91 +390,128 @@ justify-content:flex-start;
         transition:0.3s;
        }
 
-        .selezione-2 a:hover{
+        .selezione-2, .dida-3 a img:hover{
         background-color: white;
         opacity: 0.8;
         transition:0.3s;
        }
 
        .selezione-2 img{
-        width: 562px;
+        width: 100%;
         height: 593px;
         object-fit: cover;
-        padding: 44px;
-        border-radius: 80px;
+        margin-top: 44px;
+        margin-left: -22px;
+        
+        border-radius: 20px;
         
        }
 
-        .selezione-2 img{
-        width: 562px;
-        height: 593px;
-        object-fit: cover;
-       }
+    /*schermata di selezione griglia 3*/
+.featured {       
+    padding: 20px;
+}
 
-    /*schermata di selezione*/
-     .back{
-        position: absolute;
-        color: white;
-        display: flex;
-        align-items: flex-end;
-        background-color: rgba(0, 0, 0, 0.4);
-        width: 424px;
-        height: 447px;
-        margin: 22px;
-        border-radius: 35px;
-        pointer-events: none;
-       }
+.card {
+    max-width: 1350px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;  
+}                                                               
 
-    .card-3{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        flex-flow: wrap;
-        gap: 20px;
-        padding: 44px;
-    }
-       .selezione-3{
-        padding: 22px;
-        }
+.card .image {
+    height: 250px;
+} 
 
-       .selezione-3 img{
-        width: 454px;
-        height: 447px;
-        object-fit: cover;
-        border-radius: 25px;
-        
-       }
+.card .image img {
+    width: 100%;
+    object-fit: cover;  
+}
 
-       
-       .selezione-3 a:hover{
-         background-color: white;
-        opacity: 0.8;
-        transition:0.3s;
-       }
-       
+.card .large-col{
+    grid-column: span 2;
+ }
+ 
 
-       .dida-secondo a{
-        text-decoration: none;
-        list-style: none;
-       }
+.large-row .image {
+    width: 100%;
+    height: 100%;
+}
 
-       .dida-secondo h6{
-        font-size: 25px;
-        font-weight: bold;
-        margin-bottom: 5px;
-        width: 160px;
-        padding: 24px;
-        color: white;
-       }
+.item img {
+    object-fit: cover;
+    
+    height: 100%;
+    border-radius: 20px;
+}
 
-         .dida-secondo p{
-        font-size: 15px;
-        font-weight: 400;
-        width: 390px;
-        padding: 24px;
-        } 
-       
+.item {
+    width: 100%;
+    position: relative;
+}
 
-        
+
+.card a{
+    grid-row: span 2; 
+    grid-column: span 2; 
+    height: 100%;
+}
+
+.card a img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.item:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+}
+
+.card .text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    color: #fff;
+    z-index: 1;
+}
+
+.text h6{
+    font-size: 24px;
+}
+
+.featured a:hover{
+    background-color: white;
+    transition: 0.3s;
+    opacity: 0.8;
+}
+
+/* SEZIONE CONTENUTO */
+
+.preview {
+   padding: 20px;
+}
+
+.content {
+    display: flex;
+    gap: 44px;
+    justify-content: center;
+    align-items: center;
+}
+
+.content div {
+    width: 70%;
+}
+
         /*footer*/
          footer {
             font-family: "DM Sans";
@@ -574,7 +601,7 @@ justify-content:flex-start;
 }
 
 /*parte responsive Tablet*/
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 920px) {
     body{
         overflow-x: hidden;
     }
@@ -585,8 +612,9 @@ justify-content:flex-start;
         justify-content: flex-end;
     }
     .logo img{
-        width: 170px;
-        padding: 0 2px;
+        width: 18%;
+        height: auto;
+        padding:2px;
     }
 
     /*copertina*/
@@ -598,7 +626,7 @@ justify-content:flex-start;
     }
 
     .foto-copertina img{
-     height: 599px;
+     width: 100%;
     }
 
     .primo h1{
@@ -614,7 +642,7 @@ justify-content:flex-start;
    
     /*red box*/
     .red-box{
-        width: 721px;
+        max-width:100%;
     }
 
     .imm-descr{
@@ -643,7 +671,7 @@ justify-content:flex-start;
     }
 
     .foto-centro img{
-            width: 650px;
+            width: 100%;
         }
     
     .ima-didascalia2 img{
@@ -654,6 +682,8 @@ justify-content:flex-start;
     .grid-selez{
         display: inline;
     }
+
+    
     .dida-2{
         margin-left: 88px;
     }
@@ -673,10 +703,19 @@ justify-content:flex-start;
         display: inline;
     }
 
-    .red-box-2{
-        width: 721px;
-    }
+   .selezione-1, .selezione-2 img{
+    width: 80%;
+    margin-bottom: 20px;
+   }
 
+   .dida-2{
+    margin-left: 25px;
+    padding: 0 20px;
+   }
+
+   .dida-3{
+    margin-left: 44px;
+   }
 
     .testo-a-sinistra{
         display: inline;
@@ -688,8 +727,19 @@ justify-content:flex-start;
     }
 
     .immagine-destra img{
+        max-width: 80%;
      padding: 20px;
         border-radius: 50px;
+        
+    }
+
+    .immagine-destra-wide img{
+        width: 94%;
+     padding: 20px;
+    }
+
+    .elenco li{
+        width: 90%;
     }
 
 .testo-a-destra{
@@ -707,6 +757,8 @@ justify-content:flex-start;
     
     }
 
+   
+
     .immagine-sinistra-wide{
         display: none;
     }
@@ -720,7 +772,8 @@ justify-content:flex-start;
     .immagine-sinistra-wide-resp img{
      padding: 20px;
         border-radius: 50px;
-        height: 550px;
+        width: 95%;
+        
     }
 
     .selezione-1 img{
@@ -734,6 +787,7 @@ justify-content:flex-start;
         display: inline;
         display: flex;
         justify-content: center;
+        
     }
 
     .nascondi-trio{
@@ -807,7 +861,7 @@ justify-content:flex-start;
         justify-content: flex-end;
     }
     .logo img{
-        width: 170px;
+        width: 28%;
         padding: 0 2px;
     }
     .inizio ul{
@@ -818,6 +872,7 @@ justify-content:flex-start;
     }
 
     .foto-copertina img{
+        max-width: 100%;
      height: 599px;
     }
 
@@ -836,10 +891,11 @@ justify-content:flex-start;
     }
 
     .red-box{
-        width: 561px;
+        max-width: 100%;
     }
 
     .imm-descr{
+        max-width: 100%;
         padding: 10px 5px;
     }
 
@@ -877,26 +933,15 @@ justify-content:flex-start;
         display: none;
     }
 
-     .dida-2{
-        margin-left: 53px;
-        width: 500px;
-        height: 553px;
+    .card-3{
+        display: inline;
     }
 
-    .selezione-1 img{
-        margin-left: 10px;
+    .immagine-destra img{
         width: 500px;
-        height: 553px;
-    }
-    .selezione-2 img{
-        margin-left: 10px;
-        width: 499px;
-        height: 553px;
+        padding: 20px;
     }
 
-    .red-box-2{
-        width: 589px;
-    }
 
     .parte-finale{
         padding: 15px 20px;
@@ -945,7 +990,7 @@ justify-content:flex-start;
     }
 
     .immagine-destra-wide img{
-        height: 100%;
+        width: 94%;
         padding: 20px;
         border-radius: 50px;
     }
